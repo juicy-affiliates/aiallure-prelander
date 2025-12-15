@@ -3,92 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AiAllure - Your Perfect AI Companion</title>
+    <title>AiAllure - Always Yours</title>
 
-    <!-- === À REMPLACER : Colle ici le meta tag de vérification JuicyAds === -->
-    <!-- Exemple : <meta name="juicyads-site-verification" content="ton-code-ici"> -->
+    <!-- Meta tag JuicyAds (celui que tu as déjà) -->
     <meta name="juicyads-site-verification" content="b0c304a1aedd0b2b768a73669fd9cff0">
 
     <style>
-        body {
+        body, html {
             margin: 0;
             padding: 0;
-            font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #1e1e1e, #000);
-            color: white;
-            text-align: center;
+            height: 100%;
             overflow: hidden;
+            background: #000;
+        }
+        .container {
+            position: relative;
+            width: 100%;
             height: 100vh;
+        }
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* L'image remplit tout l'écran sans déformation */
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            text-align: center;
+            color: white;
+            background: rgba(0, 0, 0, 0.3); /* Légère ombre pour lisibilité */
         }
         h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 3.8rem;
+            font-weight: bold;
+            text-shadow: 0 0 20px rgba(0,0,0,0.9);
+            margin: 0 20px 10px;
             color: #ff69b4;
         }
         .tagline {
-            font-size: 1.8rem;
-            margin-bottom: 20px;
-            font-style: italic;
-        }
-        img {
-            max-width: 90%;
-            height: auto;
-            border-radius: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
-            margin-bottom: 20px;
-        }
-        p {
-            max-width: 600px;
-            font-size: 1.1rem;
-            line-height: 1.6;
-            margin: 0 auto 30px;
-            padding: 0 20px;
+            font-size: 2.4rem;
+            font-weight: bold;
+            text-shadow: 0 0 15px rgba(0,0,0,0.9);
+            margin-bottom: 50px;
         }
         .cta {
-            background: #ff69b4;
+            background: rgba(255, 105, 180, 0.95);
             color: white;
-            padding: 18px 40px;
-            font-size: 1.5rem;
+            padding: 20px 60px;
+            font-size: 2rem;
+            font-weight: bold;
             text-decoration: none;
             border-radius: 50px;
-            box-shadow: 0 8px 20px rgba(255,105,180,0.4);
-            transition: transform 0.2s;
-        }
-        .cta:hover {
-            transform: scale(1.05);
-        }
-        .loading {
-            font-size: 0.9rem;
-            margin-top: 30px;
-            opacity: 0.7;
+            box-shadow: 0 0 30px rgba(255,105,180,0.7);
         }
     </style>
 </head>
 <body>
+    <div class="container">
+        <!-- Remplace aff1.png par le nom exact de ton image (ex. always-yours.jpg) -->
+        <img src="aff1.png" alt="Always Yours">
 
-    <h1>AiAllure</h1>
-    <div class="tagline">Your Perfect AI Companion, <strong>Always Yours</strong></div>
+        <div class="overlay">
+            <h1>AiAllure</h1>
+            <div class="tagline">Always Yours 💋</div>
+            <a href="https://www.aiallure.com/companion/new?ref=36ovtBoALwu8xP7o1Xp6unWVRLr&gender=Female&style=Realistic" class="cta">
+                Enter Now
+            </a>
+        </div>
+    </div>
 
-    <img src="aff1.png" alt="Always Yours">
-
-    <p>Discover AiAllure, the revolutionary platform to create your personalized AI girlfriend. Choose her stunning looks, captivating personality, and unique traits for an ultra-realistic virtual companionship experience.</p>
-    <p>Dive into immersive conversations, intimate chats, and high-quality NSFW AI-generated images – from glamorous teasing to more explicit content. She’s available 24/7, adaptive, and limitless. 💋</p>
-
-    <a href="https://www.aiallure.com/companion/new?ref=36ovtBoALwu8xP7o1Xp6unWVRLr&gender=Female&style=Realistic" class="cta">
-        Create Your AI Girlfriend Now
-    </a>
-
-    <div class="loading">Redirecting you to paradise...</div>
-
-    <!-- Auto-redirect instantané -->
+    <!-- Redirect instantané (priorité max) -->
     <script>
-        // Redirection immédiate (0 ms de délai)
         window.location.href = "https://www.aiallure.com/companion/new?ref=36ovtBoALwu8xP7o1Xp6unWVRLr&gender=Female&style=Realistic";
     </script>
-
 </body>
 </html>
